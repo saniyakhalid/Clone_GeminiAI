@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyDxXMnQ9x-6D1HANOvUdNMDBplKXl5TltU");
+const genAI = new GoogleGenerativeAI();
 
 export async function generateResponse(prompt) {
   try {
@@ -15,3 +15,4 @@ export async function generateResponse(prompt) {
     throw error; // Let Main.jsx handle it
   }
 }
+
